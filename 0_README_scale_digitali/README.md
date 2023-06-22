@@ -30,12 +30,11 @@ L'interfaccia realizzata presenta una home page lineare. In alto a destra è pos
 <br>
 
 Le scale musicali inizialmente si presentano in un rettangolo bianco. Solo dopo che si muove il dito davanti alla videocamera, le scale prendono vita, iniziando a suonare e colorando i tasti sui quali ci si trova. 
-
-
 <br>
+Si trova anche una scritta all'interno di ogni tasto la quale indica la posizione in cui ci si trova. <br> <br>
 
 <img src="doc/home2.png" width="600"> <br>
-Si trova anche una scritta all'interno di ogni tasto la quale indica la posizione in cui ci si trova. <br>
+
 
 
 
