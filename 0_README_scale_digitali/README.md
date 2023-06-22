@@ -33,22 +33,23 @@ Le scale musicali inizialmente si presentano in un rettangolo bianco. Solo dopo 
 
 
 <br>
+
+<img src="doc/home2.png" width="600"> <br>
 Si trova anche una scritta all'interno di ogni tasto la quale indica la posizione in cui ci si trova. <br>
-<img src="doc/home2.png" width="600">
 
 
 
 ## Tecnologia usata
 Per inserire il suono, inizialmente ho inserito le note musicali, successivamente attraverso la funzione "function playNota" ho modificato i parametri del suono. <br>
 <br>
-<img src="doc/codice_1.png" width="200">
+<img src="doc/codice_1.png" width="300">
 
 Dopodichè ho impostato la funzione "function setup" per le impostazioni del Canvas, background e per la videocamera. <br>
 
 Infine ho inserito la funzione per inserire il marcatore del dito, così da utilizzare esclusivamente il dito indice per far suonare le scale. In questa parte ho definito sia il suono, che i colori dei vari tasti. 
 <br>
 <br>
-<img src="doc/codice_2.png" width="200">
+<img src="doc/codice_2.png" width="300">
 
 Grazie alla regola sottostante ho potuto fra suonare due scale diverse nello stesso canvas. <br>
 <br>
