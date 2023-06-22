@@ -6,7 +6,7 @@ Elaborato 3: Manipolazione
 
 # Manipolazione
 Autore: Chiara Andreoli <br>
-[Marionetta](https://andreolichiara.github.io/marionetta_gigi/)
+[Scale digitali](https://andreolichiara.github.io/Scale-digitali/)
 
 
 ## Introduzione e tema
