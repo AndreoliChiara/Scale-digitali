@@ -72,24 +72,26 @@ Infine ho inserito la funzione per inserire il marcatore del dito, così da util
 <br>
 <p>
 
-{// Sound
-                nota = colonna % scalaA.length
-                let ottava = 4 + Math.floor(colonna / scalaA.length)
-                const w = constrain(dito.y / height, 0, 0.5);
-                reverb.drywet(w)
-                nomeScala = "laScalaA"
-                playNota(scalaA[nota], ottava, nomeScala)
+
+
+        {
+        nota = colonna % scalaA.length
+        let ottava = 4 + Math.floor(colonna / scalaA.length)
+        const w = constrain(dito.y / height, 0, 0.5);
+        reverb.drywet(w)
+        nomeScala = "laScalaA"
+        playNota(scalaA[nota], ottava, nomeScala)
                 
 
+       
+        const r = nota / scalaA.length * 255  + ottava * 10
+        const g = dito.y / height * 50 
+        fill (r, g, 255)
+        rect (grigliaX, grigliaY, passoX, passoY)
+        fill(255,255,255)
+        text(colonna + ", " + nota, grigliaX +10, grigliaY +30)</p>
+        }
 
-                // Disegno
-                const r = nota / scalaA.length * 255  + ottava * 10
-                const g = dito.y / height * 50 
-                fill (r, g, 255)
-                rect (grigliaX, grigliaY, passoX, passoY)
-                fill(255,255,255)
-                text(colonna + ", " + nota, grigliaX +10, grigliaY +30)</p>
-}
 
 Grazie alla regola sottostante ho potuto fra suonare due scale diverse nello stesso canvas. <br>
 <br>
