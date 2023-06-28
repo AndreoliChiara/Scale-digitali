@@ -97,9 +97,11 @@ Infine ho inserito la funzione per inserire il marcatore del dito, così da util
 Grazie alla regola sottostante ho potuto fra suonare due scale diverse nello stesso canvas. <br>
 <br>
 <p>
+
         {
-        if (dito.x > 0 && dito.y > 0 && dito.x < width && dito.y < height/2)
+         if (dito.x > 0 && dito.y > 0 && dito.x < width && dito.y < height/2)
         }
+       
 </p>
 
 
