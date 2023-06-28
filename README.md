@@ -41,7 +41,29 @@ Si trova anche una scritta all'interno di ogni tasto la quale indica la posizion
 ## Tecnologia usata
 Per inserire il suono, inizialmente ho inserito le note musicali, successivamente attraverso la funzione "function playNota" ho modificato i parametri del suono. <br>
 <br>
-<img src="doc/codice_1.png" width="300">
+<p>function playNota(nota, ottava, nomeScala) {    
+    
+    if (nomeScala == "laScalaA") {
+
+        const att = 0.05  // attack
+        const sus = 0.30  // sustain
+        const rel = 0.20  // release
+        synth.play(nota + ottava, att, 0, sus, rel)
+    }
+
+    else if (nomeScala == "laScalaB") {
+
+        const att = 0.05  // attack
+        const sus = 0.30  // sustain
+        const rel = 0.20  // release
+        synth.play(nota + ottava, att, 0, sus, rel)
+    }
+
+    console.log(nomeScala, nota)
+}
+</p>
+
+
 
 Dopodichè ho impostato la funzione "function setup" per le impostazioni del Canvas, background e per la videocamera. <br>
 
