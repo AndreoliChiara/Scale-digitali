@@ -71,7 +71,8 @@ Infine ho inserito la funzione per inserire il marcatore del dito, così da util
 <br>
 <br>
 <p>
-// Sound
+
+{// Sound
                 nota = colonna % scalaA.length
                 let ottava = 4 + Math.floor(colonna / scalaA.length)
                 const w = constrain(dito.y / height, 0, 0.5);
@@ -88,6 +89,7 @@ Infine ho inserito la funzione per inserire il marcatore del dito, così da util
                 rect (grigliaX, grigliaY, passoX, passoY)
                 fill(255,255,255)
                 text(colonna + ", " + nota, grigliaX +10, grigliaY +30)</p>
+}
 
 Grazie alla regola sottostante ho potuto fra suonare due scale diverse nello stesso canvas. <br>
 <br>
