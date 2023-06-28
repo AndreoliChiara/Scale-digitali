@@ -70,11 +70,28 @@ Dopodichè ho impostato la funzione "function setup" per le impostazioni del Can
 Infine ho inserito la funzione per inserire il marcatore del dito, così da utilizzare esclusivamente il dito indice per far suonare le scale. In questa parte ho definito sia il suono, che i colori dei vari tasti. 
 <br>
 <br>
-<img src="doc/codice_2.png" width="300">
+<p>
+// Sound
+                nota = colonna % scalaA.length
+                let ottava = 4 + Math.floor(colonna / scalaA.length)
+                const w = constrain(dito.y / height, 0, 0.5);
+                reverb.drywet(w)
+                nomeScala = "laScalaA"
+                playNota(scalaA[nota], ottava, nomeScala)
+                
+
+
+                // Disegno
+                const r = nota / scalaA.length * 255  + ottava * 10
+                const g = dito.y / height * 50 
+                fill (r, g, 255)
+                rect (grigliaX, grigliaY, passoX, passoY)
+                fill(255,255,255)
+                text(colonna + ", " + nota, grigliaX +10, grigliaY +30)</p>
 
 Grazie alla regola sottostante ho potuto fra suonare due scale diverse nello stesso canvas. <br>
 <br>
-<img src="doc/codice_3.png" width="600">
+<p>if (dito.x > 0 && dito.y > 0 && dito.x < width && dito.y < height/2)</p>
 
 
 ## Target e contesto d’uso
